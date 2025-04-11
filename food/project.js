@@ -8,32 +8,29 @@ window.onscroll = function () {
   if (document.documentElement.scrollTop > 100) {
       btn.style.display = "block";  // Display button after scrolling down
   } else {
-      btn.style.display = "none";  // Hide button if scrolled to the top
+      btn.style.display = "none";  // Hide button after scrolling top
   }
 };
 
 // Scroll to the top
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });  // Smooth scroll back to the top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 $(document).ready(function() {
-  // Animate the body by fading it in
-  $('body').hide().fadeIn(2000);  // Fade in the body over 2 seconds
-
-  // Slide down the header with an animation
+  $('body').hide().fadeIn(2000);  // body fadeIn over 2 second
+  
   $('header').hide().slideDown(1500);  // Slide down header over 1.5 seconds
 
-  // Fade in elements with the class .fade-in
   $('.fade-in').hide().fadeIn(1500);  // Fade in the elements over 1.5 seconds
 
-  // Animate the cards with a delay for a staggered effect
+  // Animate the cards with a delay
   $('.card').each(function(index) {
-      $(this).delay(index * 500).fadeIn(1500);  // Staggered fade-in for each card
+      $(this).delay(index * 500).fadeIn(1500);
   });
   // Fading in "Our Story" content after the page load
   $(".fade-in").each(function(i) {
-      $(this).delay(i * 500).fadeIn(1500);  // Delay each fade-in for smooth sequence
+      $(this).delay(i * 500).fadeIn(1500);
   });
 
   // Scroll effect for animating "Our Story" on scroll
@@ -45,8 +42,7 @@ $(document).ready(function() {
 
           // Check if the element is in the viewport
           if (elementOffset < windowScroll + windowHeight - 100) {
-              $(this).addClass('fade-in');  // Add fade-in class when the element is in view
-          }
+              $(this).addClass('fade-in'); 
       });
   });
 

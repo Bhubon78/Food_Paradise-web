@@ -269,3 +269,25 @@ p:hover {
     background-color: red;
     color: white;
 }
+
+/* Shariar's CSS */
+
+ .animated-word {
+      position: absolute;
+      left: -200px; /* Start off-screen */
+      font-size: 2rem;
+      font-weight: bold;
+      animation: slideToCenter 2s ease-out forwards;
+    }
+
+    @keyframes slideToCenter {
+      to {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .animation-container {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;}

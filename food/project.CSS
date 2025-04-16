@@ -30,6 +30,11 @@ p {
     font-size: 26px;
     line-height: 1.6;
     color: rgb(93, 87, 87);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
 }
 
 .navbar {

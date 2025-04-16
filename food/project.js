@@ -18,20 +18,18 @@ function scrollToTop() {
 }
 
 $(document).ready(function() {
-  $('body').hide().fadeIn(2000);  // body fadeIn over 2 second
-  
-  $('header').hide().slideDown(1500);  // Slide down header over 1.5 seconds
-
-  $('.fade-in').hide().fadeIn(1500);  // Fade in the elements over 1.5 seconds
-
-  // Animate the cards with a delay
+  $('body').hide().fadeIn(2000);  
+  $('header').hide().slideDown(1500);
   $('.card').each(function(index) {
       $(this).delay(index * 500).fadeIn(1500);
   });
+
+  
   // Fading in "Our Story" content after the page load
   $(".fade-in").each(function(i) {
       $(this).delay(i * 500).fadeIn(1500);
   });
+  
 
   // Scroll effect for animating "Our Story" on scroll
   $(window).scroll(function() {

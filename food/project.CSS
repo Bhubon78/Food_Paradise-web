@@ -98,7 +98,7 @@ p:hover {
 
 /* footer design */
 
-footer {
+    footer {
     background-color: black;
     color: white;
     padding: 30px 20px;
@@ -106,23 +106,14 @@ footer {
     font-size: 16px;
     margin-top: 50px;
     border-top: 3px solid orange;
-}
-
-footer p {
-    margin: 5px 0;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: auto;
 }
 
 footer .small {
     font-size: 14px;
     color: white;
-}
-
-footer {
-    color: orange;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    margin: auto;
 }
 
 footer :hover {

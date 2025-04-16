@@ -91,8 +91,42 @@ p:hover {
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
+
 .action-button:hover {
-    background-color: orange;
+    background-color: rgb(167, 87, 26);
+}
+
+/* footer design */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+    border-top: 3px solid orange;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .small {
+    font-size: 14px;
+    color: white;
+}
+
+footer {
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: auto;
+}
+
+footer :hover {
+    color: orange;
 }
 
 label {
@@ -128,37 +162,6 @@ textarea {
 
 .submit-btn:hover {
     background-color: darkorange;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 50px;
-    border-top: 3px solid orange;
-}
-
-footer p {
-    margin: 5px 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-footer .small {
-    font-size: 14px;
-    color: white;
-}
-
-footer {
-    color: orange;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    margin: auto;
-}
-
-footer :hover {
-    color: orange;
 }
 
 #backToTopBtn {

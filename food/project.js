@@ -70,3 +70,31 @@ $(document).ready(function() {
     });
 
 });
+
+// Binaya's Js //
+
+// Scroll to Top Button Logic
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+        $('#backToTopBtn').fadeIn();
+    } else {
+        $('#backToTopBtn').fadeOut();
+    }
+});
+
+function scrollToTop() {
+    $('html, body').animate({ scrollTop: 0 }, 600);
+}
+
+// Form Validation
+(function () {
+    'use strict';
+    $('.needs-validation').on('submit', function (event) {
+        const form = this;
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    });
+})();
